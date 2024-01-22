@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+
+.main {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    transform-style: preserve-3d;
+}
+
+.background {
+    position: absolute;
+    object-fit: cover;
+    /* width: 19.99%; */
+    width: 100%;
+    height: 100%;
+    transform: translateZ(-20px) scale(4);
+    z-index: -1;
+}
+
+.foreground {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transform: translateZ(-9px) scale(2);
+
+
+}
+
+section {
+    background-color: black;
+    color: aliceblue;
+}
+
+section p,
+section h2 {
+    padding: 1em;
+    text-align: justify;
+}
+
+section h2 {
+    padding: 1em 0 0;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2em;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 6em;
+    justify-self: center;
+    color: #ffffff;
+}
+
+.bg {
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.bg p {
+    font-size: 5em;
+    color: white;
+    top: 50px;
+    text-transform: uppercase;
+}
+
+.bg1 {
+    background-image: url(imagesM/img1.jpg);
+}
+
+.bg2 {
+    background-image: url(imagesM/img2.jpg);
+}
+
+.bg3 {
+    background-image: url(imagesM/img3.jpg);
+}
+
+.bg4 {
+    background-image: url(imagesM/img4.jpg);
+}
+
+#back2,
+#for2 {
+    display: none;
+}
+
+@media screen and (min-width: 480px) {
+    h1 {
+        top: 20%;
+    }
+
+    #back1,
+    #for1 {
+        display: none;
+    }
+
+    #back2,
+    #for2 {
+        display: block;
+    }
+
+    .bg1 {
+        background-image: url(imagesL/img1.jpg);
+    }
+
+    .bg2 {
+        background-image: url(imagesL/img2.jpg);
+    }
+
+    .bg3 {
+        background-image: url(imagesL/img3.jpg);
+    }
+
+    .bg4 {
+        background-image: url(imagesL/img4.jpg);
+    }
+
+    .bg5 {
+        background-image: url(imagesL/img5.jpg);
+    }
+
+    .bg6 {
+        background-image: url(imagesL/img.jpg);
+    }
+
+    .bg7 {
+        background-image: url(imagesL/img7.jpg);
+    }
+
+    .bg8 {
+        background-image: url(imagesL/img8.jpg);
+    }
+}
