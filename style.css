@@ -25,21 +25,15 @@
 .background {
     position: absolute;
     object-fit: cover;
-    /* width: 19.99%; */
     width: 100%;
     height: 100%;
-    transform: translateZ(-20px) scale(4);
     z-index: -1;
 }
-
 .foreground {
     position: absolute;
     object-fit: cover;
     width: 100%;
     height: 100%;
-    transform: translateZ(-9px) scale(2);
-
-
 }
 
 section {
@@ -107,22 +101,40 @@ h1 {
 }
 
 #back2,
-#for2 {
+#for2,
+#element,
+#section {
     display: none;
 }
 
+#notice {
+    padding-top: 30%;
+    color: whitesmoke;
+    font-size: 4em;
+}
+
 @media screen and (min-width: 480px) {
-    h1 {
+    .background {
+        transform: translateZ(-20px) scale(4);
+    }
+    
+    .foreground {
+        transform: translateZ(-9px) scale(2);
+    }
+    #element {
         top: 20%;
     }
 
     #back1,
-    #for1 {
+    #for1,
+    #notice {
         display: none;
     }
 
     #back2,
-    #for2 {
+    #for2,
+    #section,
+    #element {
         display: block;
     }
 

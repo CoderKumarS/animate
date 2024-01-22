@@ -11,15 +11,15 @@
 <body>
     <div class="container">
         <div class="main">
-            <img src="imagesM/background.jpg" alt="background" class="background" id="back1">
-            <img src="imagesM/foreground.png" alt="foreground" class="foreground" id="for1">
+            <h1 id="notice">lor</h1>
+            <img src="imagesL/back.jpg" alt="background" class="background" id="back1">
+            <!-- <img src="imagesM/foreground.png" alt="foreground" class="foreground" id="for1"> -->
             <img src="imagesL/img6.jpg" alt="background" class="background" id="back2">
             <img src="imagesL/img62.png" alt="foreground" class="foreground" id="for2">
-            <h1 id="element"></h1>
-            <h1 id="notice"></h1>
+            <h1 id="element">hiii</h1>
         </div>
 
-        <section>
+        <section id="section">
             <h2>text</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, quia? Inventore harum aperiam
                 voluptatibus blanditiis, magni asperiores repudiandae neque labore recusandae repellat, consequatur odit
@@ -101,12 +101,18 @@
     <!-- Setup and start animation! -->
     <script>
         var typed = new Typed('#element', {
-            strings: ['Gallery','Sky', 'Waterfall','Mountains','Island','Space','Nature', 'City','aurora'],
+            strings: ['Gallery', 'Sky', 'Waterfall', 'Mountains', 'Island', 'Space', 'Nature', 'City', 'aurora'],
             typeSpeed: 100,
             backSpeed: 80,
             backDelay: 1500,
-            loop: true,
-            cursorChar: '_',
+            loop: true
+        });
+        var typed = new Typed('#notice', {
+            strings: ['Rotate To See Gallery'],
+            typeSpeed: 60,
+            backSpeed: 30,
+            backDelay: 1000,
+            loop: true
         });
     </script>
 </body>
